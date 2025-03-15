@@ -67,11 +67,11 @@
         }
     </style>
     <script>
-        let countdown = 7;
+        let countdown = 3;
         function updateTimer() {
             document.getElementById("countdown").textContent = countdown;
             let progress = document.querySelector(".progress");
-            let offset = (440 / 7) * (7 - countdown);
+            let offset = (440 / 3) * (3 - countdown);
             progress.style.strokeDashoffset = offset;
             if (countdown === 0) {
                 window.location.href = "https://adikr.eu.org"; // Change to your URL
@@ -96,8 +96,10 @@
             <circle class="progress-bg" cx="90" cy="90" r="70"/>
             <circle class="progress" cx="90" cy="90" r="70" stroke="url(#gradient)"/>
         </svg>
-        <div class="countdown" id="countdown">7</div>
+        <div class="countdown" id="countdown">3</div>
     </div>
     <div class="subheading">Please wait while the page redirects.</div>
+      <div class="subheading"><a href="https://adikr.eu.org">or click here to go to destination page</a> </div>
+
 </body>
 </html>
